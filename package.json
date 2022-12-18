@@ -1,0 +1,29 @@
+{
+  "name": "basic-data-collector",
+  "version": "1.0.0",
+  "description": "marinade-finance basic stats service",
+  "scripts": {
+    "build": "tsc -b -verbose",
+    "start": "npm run build && node dist/main.js",
+    "take": "cd dist && ANCHOR_PROVIDER_URL=\"https://api.mainnet-beta.solana.com\" node take-snapshot"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "marinade.finance",
+    "staking",
+    "marinade",
+    "apy"
+  ],
+  "author": "lucio tato",
+  "license": "ISC",
+  "dependencies": {
+    "@marinade.finance/marinade-ts-sdk": "^4.0.3",
+    "@project-serum/anchor": "^0.18.0",
+    "node-fetch": "^2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.11",
+    "@types/node-fetch": "^2"
+  }
+}

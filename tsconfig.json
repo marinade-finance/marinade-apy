@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 14+es2020",
+  "compilerOptions": {
+    "lib": [
+      "es2020",
+      "es2020.promise",
+      "es2020.bigint",
+      "es2020.string"
+    ],
+    "module": "Commonjs",
+    "target": "es2020",
+    "rootDir": "src",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": false
+  }
+}
